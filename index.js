@@ -5,12 +5,12 @@ const btn = document.querySelector("#btn");
 btn.addEventListener("click", () => {
   addTask();
 });
-btn.addEventListener("keydown", (e) => {
-  e.preventDefault();
-  if (e.key == "Enter") {
-    alert("hello");
-  }
-});
+// btn.addEventListener("keydown", (e) => {
+//   e.preventDefault();
+//   if (e.key == "Enter") {
+//     alert("hello");
+//   }
+// });
 
 function addTask() {
   if (input.value === "") {
