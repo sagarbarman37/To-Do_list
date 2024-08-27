@@ -61,7 +61,7 @@ ol li {
 li span {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2px;
   font-size: 20px;
   width: 20px;
   border-radius: 10px;
