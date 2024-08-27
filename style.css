@@ -76,3 +76,22 @@ li span:hover {
   cursor: pointer;
   border-radius: 10px;
 }
+@media (max-width: 400px) {
+  body {
+    padding: 0 10px;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  #text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #btn {
+    width: 100%;
+  }
+  ol li {
+    width: 100%;
+  }
+}
