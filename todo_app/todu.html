@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #232323;
+            color: #fff;
+        }
+        .box {
+            box-shadow: 0 2px 8px 0 rgba(255,255,255,0.3);
+            border-radius: 6px;
+            padding: 10px;
+            margin-top: 20px;
+
+        }
+        h1 {
+            font-size: medium;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .input-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        #text {
+            height: 20px;
+            padding: 2px 8px;
+            
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        .add {
+            height: 26px;
+            width: 62px;
+            background-color: purple;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            color: #fff;
+        }
+        .delete {
+            background-color: red;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            
+        }
+
+        ul li{
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 10px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .red-placeholder::placeholder {
+            color: red;
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>To-Do List</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Add a New Task!" name="" id="text">
+            <button class="add">Add me</button>
+        </div>
+
+        <ul class="todo-list">
+        </ul>
+    </div>
+
+    <!-- <script src="./todo.js"></script> -->
+    <script src="./app.js"></script>
+</body>
+</html>
